@@ -105,7 +105,7 @@
     <link name="${prefix}link_tcp" />
 
     <joint name="${prefix}joint_tcp" type="fixed">
-      <origin xyz="${_tcp_xyz}" rpy="${_tcp_rpy}" />
+      <origin xyz="${_tcp_xyz}" rpy="${geometry_mesh_tcp_rpy}" />
       <parent link="${prefix}other_geometry_link" />
       <child link="${prefix}link_tcp" />
     </joint>
