@@ -23,7 +23,7 @@
   <!-- NO_GUI_CTRL means that Rviz configuration is just for display purpose, no (Moveit) control panel loaded -->
   <arg name="NO_GUI_CTRL" default="false"/>
   <!-- option to show rviz or not -->
-  <arg name="show_rviz" default="true" />
+  <arg name="show_rviz" default="false" />
   <arg name="model1300_1" default="false" />
   <arg name="model1300_2" default="false" />
   <arg name="add_realsense_d435i_1" default="false" />
