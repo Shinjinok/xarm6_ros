@@ -25,8 +25,8 @@
       <joint name="${prefix}joint_tcp" />
     </group>
    
-    <disable_collisions link1="${prefix}box_link" link2="${prefix}hokuyo_link" reason="Never" />
-    <disable_collisions link1="${prefix}link6" link2="${prefix}box_link" reason="Never" />
+    <disable_collisions link1="${prefix}box_link" link2="${prefix}hokuyo_link" reason="Adjacent" />
+    <disable_collisions link1="${prefix}link6" link2="${prefix}box_link" reason="Adjacent" />
     <disable_collisions link1="${prefix}link1" link2="${prefix}link2" reason="Adjacent" />
     <disable_collisions link1="${prefix}link1" link2="${prefix}link3" reason="Never" />
     <disable_collisions link1="${prefix}link1" link2="${prefix}link_base" reason="Adjacent" />
