@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="DUAL_UF_ROBOT">
+  <!-- parameters -->
+  <xacro:arg name="prefix_1" default="L_" />
+
+  <xacro:arg name="dof_1" default="6" />
+
+  <xacro:arg name="robot_type_1" default="xarm" />
+
+  <xacro:include filename="$(find xarm_description)/srdf/xarm_macro.srdf.xacro" />
+  <xacro:xarm_macro_srdf prefix="$(arg prefix_1)" dof="$(arg dof_1)" robot_type="$(arg robot_type_1)" 
+    />
+
+
+</robot>

@@ -23,7 +23,7 @@
   <!-- NO_GUI_CTRL means that Rviz configuration is just for display purpose, no (Moveit) control panel loaded -->
   <arg name="NO_GUI_CTRL" default="false"/>
   <!-- option to show rviz or not -->
-  <arg name="show_rviz" default="true" />
+  <arg name="show_rviz" default="false" />
   <arg name="model1300_1" default="false" />
   <arg name="model1300_2" default="false" />
   <arg name="add_realsense_d435i_1" default="false" />
@@ -59,7 +59,7 @@
   <node if="$(arg pub_tf)" name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
 
   <!-- Run the main MoveIt executable without trajectory execution (we do not have controllers configured by default) -->
-  <include if="$(arg load_move_group)" file="$(find dual_xarm6_moveit_config)/launch/laser_move_group.launch">
+  <include if="$(arg load_move_group)" file="$(find dual_xarm6_moveit_config)/launch/L_xarm_laser_move_group.launch">
     <arg name="allow_trajectory_execution" value="true"/>
     <arg name="fake_execution" value="$(arg fake_execution)"/>
     <arg name="info" value="true"/>

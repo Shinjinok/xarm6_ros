@@ -7,7 +7,7 @@
   <arg name="namespace" default="xarm" />
   <arg name="velocity_control" default="false"/>
   <arg name="enforce_limits" default="true" />
-  <arg name="baud_checkset" default="true" />
+  <arg name="baud_checkset" default="false" />
 	<arg name="default_gripper_baud" default="2000000" />
   <arg name="publish_tf" default="false" />
   <arg name="show_rviz" default="false" />
