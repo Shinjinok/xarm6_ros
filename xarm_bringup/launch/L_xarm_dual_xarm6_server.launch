@@ -5,7 +5,7 @@
    <arg name="hw_ns_1" default="L_xarm6" />
   <arg name="enforce_limits_1" default="true" />
   <arg name="show_rviz_1" default="false" />
-
+  <arg name="add_gripper_1" default="false" /> 
   
   <!-- Important: currently real xArm can be either controlled by API service or Moveit planner, but not at the same time! -->
   <!-- If you use moveit, use the launch file in xarm*_moveit_config package for startup! -->
@@ -15,7 +15,7 @@
   <rosparam file="$(find dual_xarm6_moveit_config)/config/L_xarm_xarm6_combined_control_config.yaml" command="load"/>
 
   <!-- common: bring up node to collect robot feedback -->
-  <include file="$(find xarm_bringup)/launch/L_xarm_xarm_driver_common.launch">
+  <include file="$(find xarm_bringup)/launch/xarm_driver_common.launch">
     <arg name="robot_ip" value="$(arg robot_ip_1)" />
     <arg name="report_type" value="$(arg report_type_1)" />
     <arg name="dof" value="6" />
@@ -23,6 +23,7 @@
     <arg name="namespace" value="$(arg hw_ns_1)" />
     <arg name="enforce_limits" value="$(arg enforce_limits_1)" />
     <arg name="show_rviz" value="$(arg show_rviz_1)" />
+    <arg name="add_gripper" value="$(arg add_gripper_1)" />
   </include>
 
 </launch>

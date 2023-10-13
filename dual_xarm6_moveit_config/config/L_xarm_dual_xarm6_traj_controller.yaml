@@ -1,9 +1,9 @@
-# xarm:
-joint_state_controller:
+##xarm:
+/xarm/joint_state_controller:
   type: joint_state_controller/JointStateController
   publish_rate: 50
 
-L_xarm6_traj_controller:
+/xarm/L_xarm6_traj_controller:
   type: position_controllers/JointTrajectoryController
   joints:
       - L_joint1
@@ -24,4 +24,6 @@ L_xarm6_traj_controller:
   stop_trajectory_duration: 0.2
   state_publish_rate:  25
   action_monitor_rate: 10
+
+
 
