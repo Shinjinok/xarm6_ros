@@ -8,26 +8,16 @@
   <arg name="show_rviz" default="false" />
   <!-- NO_GUI_CTRL means that Rviz configuration is just for display purpose, no (Moveit) control panel loaded -->
   <arg name="no_gui_plan" default="false" />
-  <arg name="ext_ns" default="xarm" />
+  <arg name="ext_ns" default="" />
   <arg name="jnt_stat_pub_rate" default="5" />
   <arg name="robot_sn_1" default="" />
-  
-
-
+ 
 <!-- common: bring up node to enable real xArm control -->
   <include file="$(find xarm_bringup)/launch/L_xarm_dual_xarm6_server.launch">
     <arg name="robot_ip_1" value="$(arg robot_ip_1)" />
-
     <arg name="report_type_1" value="$(arg report_type_1)" />
-
     <arg name="hw_ns_1" value="$(arg hw_ns_1)" />
-
     <arg name="enforce_limits_1" value="$(arg enforce_limits_1)" />
-
-
-
-
-
     <arg name="use_moveit" value="false" />
   </include>
 
@@ -55,7 +45,7 @@
   <remap from="/move_group/monitored_planning_scene" to="$(arg ext_ns)/move_group/monitored_planning_scene" />
   <remap from="$(arg ext_ns)/source_list" to="/source_list" />
   <include file="$(find dual_xarm6_moveit_config)/launch/L_xarm_moveit_rviz_common.launch">
-    <arg name="jnt_stat_source" value="[/xarm/joint_states]" />
+    <arg name="jnt_stat_source" value="[$(arg hw_ns_1)/joint_states]" />
     <arg name="load_move_group" value="true" />
     <arg name="show_rviz" value="$(arg show_rviz)" />
     <arg name="NO_GUI_CTRL" value="$(arg no_gui_plan)"/>
