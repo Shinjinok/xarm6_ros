@@ -5,8 +5,8 @@
   <arg name="add_realsense_d435i_2" default="false" />
   <arg name="add_d435i_links_1" default="false" />
   <arg name="add_d435i_links_2" default="false" />
-  <arg name="robot_sn_1" default="" />
-  <arg name="robot_sn_2" default="" />
+  <arg name="robot_sn_1" default="xarm" />
+  <arg name="robot_sn_2" default="xarm" />
   <!-- Remap the name space so it can send command to gazebo loaded controller -->
   <!-- this remap must appear BEFORE move_group launch -->
   <remap from="/follow_joint_trajectory" to="/xarm/xarm6_traj_controller/follow_joint_trajectory"/>

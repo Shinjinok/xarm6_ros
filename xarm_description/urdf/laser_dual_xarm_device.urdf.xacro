@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="DUAL_UF_ROBOT">
   <xacro:arg name="prefix_1" default="L_"/>
   <xacro:arg name="prefix_2" default="R_"/>
-  <xacro:arg name="hw_ns" default="xarm"/>
+  <xacro:arg name="hw_ns" default=""/>
   <xacro:arg name="limited" default="false"/>
   <xacro:arg name="effort_control" default="false"/>
   <xacro:arg name="velocity_control" default="false"/>

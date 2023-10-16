@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="UF_ROBOT">
   <xacro:arg name="prefix" default=""/>
-  <xacro:arg name="hw_ns" default="xarm"/>
+  <xacro:arg name="hw_ns" default=""/>
   <xacro:arg name="limited" default="false"/>
   <xacro:arg name="effort_control" default="false"/>
   <xacro:arg name="velocity_control" default="false"/>
