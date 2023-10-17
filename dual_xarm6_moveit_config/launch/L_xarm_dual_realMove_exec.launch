@@ -34,9 +34,9 @@
     respawn="false"
     output="screen"
 
-    args="/xarm/$(arg hw_ns_1)_traj_controller /xarm/joint_state_controller"/> 
+    args="$(arg hw_ns_1)_traj_controller joint_state_controller"/> 
 
-  <remap from="$(arg hw_ns_1)_controller/follow_joint_trajectory" to="/xarm/$(arg hw_ns_1)_traj_controller/follow_joint_trajectory"/>
+  <remap from="$(arg hw_ns_1)_controller/follow_joint_trajectory" to="$(arg hw_ns_1)_traj_controller/follow_joint_trajectory"/>
 
 
    <!-- common part 

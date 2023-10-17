@@ -1,5 +1,5 @@
 controller_list:
-  - name: "/xarm/L_xarm6_traj_controller"
+  - name: "L_xarm6_traj_controller"
     action_ns: follow_joint_trajectory
     default: True
     type: FollowJointTrajectory
