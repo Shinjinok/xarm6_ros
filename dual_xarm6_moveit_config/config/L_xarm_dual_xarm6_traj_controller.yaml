@@ -1,9 +1,9 @@
 ##xarm:
-/xarm/joint_state_controller:
+joint_state_controller:
   type: joint_state_controller/JointStateController
   publish_rate: 50
 
-/xarm/L_xarm6_traj_controller:
+L_xarm6_traj_controller:
   type: position_controllers/JointTrajectoryController
   joints:
       - L_joint1
