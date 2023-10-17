@@ -9,7 +9,7 @@
 
   <!-- Load universal robot description format (URDF) -->
   <param if="$(arg load_robot_description)" name="$(arg robot_description)" 
-    command="xacro --inorder  '$(find xarm_description)/urdf/L_xarm_dual_xarm_device.urdf.xacro' dof_1:=6 limited:=true 
+    command="xacro --inorder  '$(find xarm_description)/urdf/L_xarm_laser_dual_xarm_device.urdf.xacro' dof_1:=6 limited:=true 
       robot_sn_1:=$(arg robot_sn_1)
     "/>
 

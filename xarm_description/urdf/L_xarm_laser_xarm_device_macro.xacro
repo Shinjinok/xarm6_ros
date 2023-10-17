@@ -8,7 +8,7 @@
     velocity_control:=false
     add_gripper:=false
     add_vacuum_gripper:=false
-    dof:=6
+    dof:=7
     robot_type:='xarm'
     ros2_control_plugin:='uf_robot_hardware/UFRobotSystemHardware'
     attach_to:='world'
@@ -137,7 +137,7 @@
       <xacro:unless value="${robot_type == 'lite' or robot_type == 'uf850'}">
         <!-- Load XArm6 Robot Model URDF -->
         <xacro:if value="${is_laser}">
-            <xacro:include filename="$(find xarm_description)/urdf/xarm6/laser_xarm6_robot_macro.xacro" />
+            <xacro:include filename="$(find xarm_description)/urdf/xarm6/L_xarm_laser_xarm6_robot_macro.xacro" />
         </xacro:if>
         <xacro:unless value="${is_laser}">
             <xacro:include filename="$(find xarm_description)/urdf/xarm6/xarm6_robot_macro.xacro" />
