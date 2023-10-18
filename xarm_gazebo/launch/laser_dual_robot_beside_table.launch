@@ -5,7 +5,8 @@
 
   <arg name="dof" default="6" />
   <arg name="robot_type" default="xarm" />
-  <arg name="robot_sn" default="" />
+  <arg name="robot_sn_1" default="L_xarm6" />
+  <arg name="robot_sn_2" default="R_xarm6" />
   <arg name="model1300" default="false" />
   <arg name="limited" default="true" />
   <arg name="hw_ns" default=""/>
@@ -54,8 +55,8 @@
     dof_2:=$(arg dof)
     robot_type_1:=$(arg robot_type) 
     robot_type_2:=$(arg robot_type) 
-    robot_sn_1:=$(arg robot_sn)
-    robot_sn_2:=$(arg robot_sn)
+    robot_sn_1:=$(arg robot_sn_1)
+    robot_sn_2:=$(arg robot_sn_2)
     hw_ns:=$(arg hw_ns)
     limited:=$(arg limited)
     model1300_1:=$(arg model1300)

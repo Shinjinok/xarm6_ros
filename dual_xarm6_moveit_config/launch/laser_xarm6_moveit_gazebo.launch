@@ -12,7 +12,7 @@
   <remap from="/follow_joint_trajectory" to="/xarm/xarm6_traj_controller/follow_joint_trajectory"/>
 
   <include file="$(find dual_xarm6_moveit_config)/launch/laser_moveit_rviz_common.launch">
-    <arg name="jnt_stat_source" value="[/xarm/joint_states]" />
+    <arg name="jnt_stat_source" value="[joint_states]" />
     <arg name="load_move_group" value="true" />
     <arg name="pub_tf" value="false" />
     <arg name="model1300_1" value="$(arg model1300_1)" />
