@@ -8,7 +8,7 @@
   <arg name="robot_sn" default="" />
   <arg name="model1300" default="false" />
   <arg name="limited" default="true" />
-  <arg name="hw_ns" default="xarm"/>
+  <arg name="hw_ns" default=""/>
   <arg name="velocity_control" default="false"/>
   <arg name="effort_control" default="false"/>
 
