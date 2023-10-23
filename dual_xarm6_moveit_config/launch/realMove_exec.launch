@@ -1,6 +1,6 @@
 <launch>
-  <arg name="robot_ip_1" /> 
-  <arg name="robot_ip_2" />
+  <arg name="robot_ip_1" default="192.168.0.100"/> 
+  <arg name="robot_ip_2" default="192.168.0.200"/>
   <arg name="report_type_1" default="normal" />	
   <arg name="report_type_2" default="normal" />	
   <arg name="hw_ns_1" default="L_xarm6" />
