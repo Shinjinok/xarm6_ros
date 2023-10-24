@@ -43,7 +43,7 @@
   <!-- startup simulated world -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <!-- <arg name="world_name" value="$(find xarm_gazebo)/worlds/xarm_example1_table.world"/>-->
-    <arg name="world_name" value="/home/sjo/xarm_pipe/world/xarm_pipe_table.world"/>
+    <arg name="world_name" value="$(env HOME)/xarm_pipe/world/xarm_pipe_table.world"/>
     <arg name="paused" value="$(arg paused)"/>
     <arg name="gui" value="$(arg gui)"/>
   </include>
